@@ -3,5 +3,6 @@
 @theme {
   --color-textColor: #262626;
   --font-fontStyle: "DM Sans", sans-serif;
-  --color-categoryC: #F5F5F3;  
+  --color-categoryC: #F5F5F3;
+  --color-informationText: #6D6D6D;  
 }
