@@ -1,14 +1,13 @@
 import React from 'react'
+import { FaArrowAltCircleRight } from "react-icons/fa";
 
 const NExtArrow = (props) => {
-    const { className, style, onClick } = props;
+    const { onClick } = props;
     return (
 
-            <div
-                className={className}
-                style={{ ...style, display: "block", background: "red" }}
-                onClick={onClick}
-            >rafi</div>
+        <div className={'absolute top-1/2 right-5 -translate-y-1/2'} onClick={onClick}>
+           <FaArrowAltCircleRight className='text-5xl text-shadow-transparent'/>
+        </div>
 
     )
 }
