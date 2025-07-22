@@ -12,7 +12,7 @@ const BestSelling = () => {
         <div className="pb-5">
             <Container>
                 <div className="font-bold pb-4 text-2xl mt-8">Best Selling</div>
-                <Flex className={'gap-x-5'}>
+                <Flex className={'px-3 gap-x-6'}>
                     <Product imgSrc={clock} text={"10%"}/>
                     <Product imgSrc={smartWatch} text={"New"}/>
                     <Product imgSrc={busket} text={"20%"}/>
