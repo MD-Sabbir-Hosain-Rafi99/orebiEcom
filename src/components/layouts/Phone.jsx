@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const Phone = () => {
   return (
     <>
-    <div className="py-[100px]">
+    <div className="py-[100px]" data-aos="fade-up">
         <Container>
             <Link to={"/shop"}>
                 <Image imgSrc={Ads} imgAlt={"ads"}/>

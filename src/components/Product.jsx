@@ -8,7 +8,7 @@ import Compare from '../assets/Icons/Compare';
 import { FaShoppingCart } from "react-icons/fa";
 
 
-const Product = ({imgSrc, text}) => {
+const Product = ({imgSrc, text, productTitle, priceTxt}) => {
   return (
     <>
         <div className="relative group -mx-2">
@@ -28,8 +28,8 @@ const Product = ({imgSrc, text}) => {
             </div>
             <div className="">
                 <Flex className={'justify-between'}>
-                    <h3>Basic Crew Neck Tee</h3>
-                    <p>$44.00</p>
+                    <h3>{productTitle}</h3>
+                    <p>{priceTxt}</p>
                 </Flex>
             </div>
         </div>

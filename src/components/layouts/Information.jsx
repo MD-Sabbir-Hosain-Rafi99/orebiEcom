@@ -11,7 +11,9 @@ import watch from '../../assets/watch.png'
 import light from '../../assets/light.png'
 import { Link } from 'react-router-dom';
 
+
 const Information = () => {
+
     return (
         <>
             <Container>
@@ -32,10 +34,10 @@ const Information = () => {
                 </Flex>
                 <Link to={'/'}>
                     <div className="flex mt-40 mb-32 gap-x-[35px]">
-                        <div className="w-[640px]">
+                        <div data-aos="fade-right" className="w-[640px]">
                             <Image imgSrc={Lamp} imgAlt={"lamp"} />
                         </div>
-                        <div className="w-[640px]">
+                        <div data-aos="fade-left" className="w-[640px]">
                             <Image imgSrc={watch} imgAlt={"watch"} />
                             <Image className={'mt-8.5'} imgSrc={light} imgAlt={"light"} />
                         </div>
