@@ -30,6 +30,8 @@ const ProductsPart = () => {
         }
         alldatas();
     }, [])
+
+    let newArrival = myProduct.slice(0, 20)
     return (
         <>
 
@@ -37,12 +39,10 @@ const ProductsPart = () => {
                 <Container>
                     <div className="font-bold pb-4 text-2xl">New Arrival</div>
                     <Slider {...settings}>
-                        {myProduct.map((item) => (
-
+                        {newArrival.map((item) => (
                                 <div key={item.id} className='px-6'>
                                     <Product imgSrc={item.thumbnail} text={"10%"} productTitle={item.title} priceTxt={`$${item.price}`} />
                                 </div>
-
                         ))}
                     </Slider>
                 </Container>

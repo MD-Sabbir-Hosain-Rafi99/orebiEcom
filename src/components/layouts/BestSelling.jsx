@@ -32,13 +32,14 @@ const BestSelling = () => {
         }
         alldatas();
     }, [])
+    let bestSelling = myProduct.slice(20, 30)
   return (
    <>
         <div className="pb-8">
                 <Container>
                     <div className="font-bold pb-4 text-2xl">Best Selling</div>
                     <Slider {...settings}>
-                        {myProduct.map((item) => (
+                        {bestSelling.map((item) => (
                                 <div key={item.id} className='px-6'>
                                     <Product imgSrc={item.thumbnail} text={"30%"} productTitle={item.title} priceTxt={`$${item.price}`} />
                                 </div>
